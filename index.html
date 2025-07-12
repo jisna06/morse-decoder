@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Morse Code Decoder</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Morse Code Decoder</h1>
+    
+    <textarea id="morseInput" placeholder="Type Morse code or English text..."></textarea>
+    
+    <div class="buttons">
+      <button onclick="decodeMorse()">Decode Morse ➝ Text</button>
+      <button onclick="encodeToMorse()">Encode Text ➝ Morse</button>
+      <button onclick="playMorse()">🔊 Play</button>
+      <button onclick="clearFields()">🧹 Clear</button>
+      <button onclick="toggleTheme()">🌓 Toggle Theme</button>
+    </div>
+    
+    <div class="output">
+        <h2>Output:</h2>
+        <div id="decodedText" class="output-box">Your decoded message will appear here.</div>
+      </div>      
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
